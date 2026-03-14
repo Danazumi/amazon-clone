@@ -43,6 +43,7 @@ export class ProductService {
         }
 
         existingProduct.name = newName ??  existingProduct.name 
+        existingProduct.price = newPrice ??  existingProduct.price 
         existingProduct.description = newDescription ??  existingProduct.description 
 
 
