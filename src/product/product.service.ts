@@ -62,6 +62,4 @@ export class ProductService {
 //Done by injecting into the constructor of the JS/TS class that its consumed from
 //constructors are mainly used for dependency injection
 //B4 we can call mongoose methods we need to connect frm DB to model rep i.e Schema we referenced
-//Now that model has been ref i'm able to interact w DB just using mongoose methods
-//we can update all props except id
-//create returns a product Document
+
