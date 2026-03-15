@@ -53,6 +53,14 @@ export class ProductController {
 
     }
 
+       @Post(':id')
+    softDelete(@Param('id') id :string) : Promise<DeleteResult>
+    {
+        return this.productService.delete(id)
+
+    }
+
+
 }
 
 
