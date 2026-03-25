@@ -20,9 +20,7 @@ export class ProductService {
         return newProduct.save()
     }
 
-    async findAll(): Promise<ProductDocument[]>{
-        return this.productModel.find().exec()
-    }
+  
 
     async find(id : string): Promise<ProductDocument | null>{
         return this.productModel.findById(id).exec() 
