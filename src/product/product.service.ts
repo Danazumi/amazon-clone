@@ -28,6 +28,10 @@ export class ProductService {
         return this.productModel.findById(id).exec() 
     }
 
+    async sub(id : string): Promise<ProductDocument | null>{
+        return this.productModel.sub(id).exec() 
+    }
+
     async findOne(id : string): Promise<ProductDocument | null>{
         return this.productModel.findOne(id)
     }
