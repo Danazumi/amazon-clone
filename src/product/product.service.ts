@@ -15,7 +15,6 @@ export class ProductService {
         price: number, 
         description?: string, 
     ): Promise<ProductDocument>{
-        //instanciate new object by ref to d productModel
         const newProduct = new this.productModel({name, price, description})
         return newProduct.save()
     }
